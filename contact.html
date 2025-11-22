@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeni Anggraini Susanti | Contact</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #cfc5bc; /* warna kemarin */
+      color: #4a3c31;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: #4a3c31;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f3ece6;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 80%;
+      margin: 40px auto;
+      background: #f3ece6;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4a3c31;
+      margin-bottom: 35px;
+    }
+
+    label {
+      font-size: 17px;
+      font-weight: bold;
+      color: #4a3c31;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 2px solid #a48f7b;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #ffffff;
+      color: #4a3c31;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #4a3c31;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background: #4a3c31;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      width: 160px;
+      display: block;
+      margin: 0 auto;
+      transition: 0.2s;
+    }
+
+    input[type="submit"]:hover {
+      background: #3a2f26;
+    }
+
+    footer {
+      background: #4a3c31;
+      color: #f3ece6;
+      text-align: center;
+      padding: 17px;
+      margin-top: 50px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+ 
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+
+    <form>
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Alamat email..." />
+
+      <label for="message">Pesan</label>
+      <textarea name="message" placeholder="Tulis pesan anda..." rows="4"></textarea>
+
+      <input type="submit" value="Kirim">
+    </form>
+  </div>
+
+
+</body>
+</html>
