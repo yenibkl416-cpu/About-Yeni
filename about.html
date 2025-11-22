@@ -1,0 +1,192 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Yeni Anggraini Susanti Personal Website</title>  
+</head>  
+  
+<body>  
+    <nav> 	
+        <a href="index.html">Home</a>
+      
+        <a href="about.html">About me</a>  
+    </nav>  
+  
+    <hr />  
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Section</title>
+  <style>
+     body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #cfc5bc; /* warna kemarin */
+      color: #4a3c31;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: #4a3c31;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f3ece6;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-photo {
+      flex-shrink: 0;
+      animation: photoMove 1s ease forwards;
+      opacity: 0;
+    }
+
+    .about-photo img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50% / 35%;
+      object-fit: cover;
+      border: 3px solid #cfc5bc;
+      box-shadow: 0 4px 12px rgba(74,60,49,0.2);
+    }
+
+    .about-texts {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      animation: textSlide 1s ease forwards;
+      opacity: 0;
+    }
+
+    .about-title {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #5a4638;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .about-item {
+      background: #e7ded5;
+      padding: 18px 22px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(74,60,49,0.15);
+    }
+
+    .about-label {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #4a3c31;
+    }
+
+    .about-text {
+      font-size: 1.05rem;
+      color: #4a3c31;
+    }
+
+    @keyframes photoMove {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes textSlide {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+	
+	nav {
+      background: #4a3c31;
+      padding: 14px;
+      text-align: center;
+	  
+
+    nav a {
+      color: #f3ece6;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+	
+	  
+	input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 2px solid #a48f7b;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #ffffff;
+      color: #4a3c31; 
+	  
+	footer {
+      background: #4a3c31;
+      color: #f3ece6;
+      text-align: center;
+      padding: 17px;
+	  margin-top: 50px;
+      font-size: 15px;
+    }
+	
+	
+  </style>
+</head>
+<body>
+
+  <section class="about-section">
+    <div class="about-photo">
+      <img src="yeni2.jpg" alt="Yeni Anggrini">
+    </div>
+
+    <div class="about-texts">
+      <h2 class="about-title">About Me</h2>
+
+      <div class="about-item">
+       
+        <span class="about-text">Namaku Yeni, aku seorang mahasiswi semester 1 di Universitas Bengkulu, dan aku selalu percaya bahwa setiap perjalanan hidup menyimpan cerita kecil yang layak dikenang. Setiap momen yang lewat baik yang hangat maupun yang menyakitkan
+		kusimpan seperti halaman-halaman buku yang tak pernah ingin kututup. Kadang rasanya hidup berjalan terlalu cepat, namun kenangannya justru tinggal lebih lama, seolah menolak pergi dari ingatan. <br><br>
+
+Aku tumbuh sebagai pribadi yang cengeng, mudah panik, dan cepat takut hampir dalam setiap situasi.
+ Sifat-sifat itu membuatku sering merasa tidak sepenuhnya menikmati perjalanan hidupku.
+ Sejak kecil, aku mudah menangis karena hal-hal sepele, dan ketika rasa takut datang, aku sering kehilangan kendali sejenak seperti badai kecil yang tiba-tiba muncul tanpa pertanda.<br><br>
+
+Namun di tengah semua itu, aku selalu menemukan caraku sendiri untuk beristirahat dari dunia.
+ Aku suka menonton film, mendengarkan musik, dan berenang. kebiasaan-kebiasaan sederhana yang telah menemaniku sejak jauh sebelum aku mengerti arti tumbuh. 
+ Di air, aku merasa lebih ringan; dalam musik, aku merasa dimengerti; dan dari film, aku belajar melihat hidup dari sudut pandang yang lebih luas.<br><br>
+
+Dan begitulah aku seseorang yang terus belajar memahami dirinya sendiri, satu halaman kecil dalam perjalanan yang masih panjang.</span>
+      </div>
+
+      
+</span>
+		
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>
