@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Interaktif</title>
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #cfc5bc; /* Warna mirip tema contact */
+    margin: 0;
+    padding: 20px;
+  }
+  
+   av {
+      background: #4a3c31;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f3ece6;
+      text-decoration: none;
+      margin: 23px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+  h1 {
+    text-align: center;
+    color: #3e3e3e;
+  }
+
+  .button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  button {
+    background-color: #bfa28b; /* Warna tombol selaras */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #a07c66;
+  }
+
+  .content {
+    display: none;
+    background-color: #f7f1eb; /* Sedikit lebih terang dari body */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid #bfa28b;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  p {
+    margin: 0;
+    color: #4a4a4a;
+  }
+  
+  nav {
+      background: #4a3c31;
+      padding: 14px;
+      text-align: center;
+	  
+
+    nav a {
+      color: #f3ece6;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+	
+	  
+	input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 2px solid #a48f7b;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #ffffff;
+      color: #4a3c31; 
+	  
+	  
+  
+  footer {
+      background: #4a3c31;
+      color: #f3ece6;
+      text-align: center;
+      padding: 17px;
+      margin-top: 50px;
+      font-size: 15px;
+    }
+
+</style>
+</head>
+<body>
+ <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">blog</a>
+    
+  </nav><br>
+
+<h1>Blog Interaktifku</h1>
+</div>
+
+<div id="musik" class="content">
+  <img src="fotokelas.jpg" alt="Musik">
+  <div>
+   <a href="Ruang Kelas Favorit.html"><h2>Ruang Favorit</h2></a> 
+   
+  </div>
+</div>
+
+<div id="berenang" class="content">
+  <img src="bertujuh.jpg" alt="Berenang">
+  <div>
+     <a href="halaman yang sama.html"><h2>Halaman Yang Sama</h2>
+  </div>
+</div>
+  
+<div id="berenang" class="content">
+  <img src="kita.jpg" alt="Berenang">
+  <div>
+     <a href="persahabatan kecil.html"><h2>Cerita Kecil dari Persahabatan Besar</h2>
+</div>
+
+<script>
+function showContent(id) {
+  const contents = document.querySelectorAll('.content');
+  contents.forEach(content => content.classList.remove('active'));
+
+  const selected = document.getElementById(id);
+  selected.classList.add('active');
+} 
+</script>
+
+
+
+</body>
+</html>
