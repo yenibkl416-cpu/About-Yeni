@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cerita — Ruang Kelas Favorit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Body style user requested */
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #cfc5bc; /* sesuai permintaan */
+      color: #4a3c31;      /* sesuai permintaan */
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+	
+	 av {
+      background: #4a3c31;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f3ece6;
+      text-decoration: none;
+      margin: 23px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(74,60,49,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .story {
+      line-height: 1.7;
+      font-size: 18px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .story h1 {
+      margin-top: 0;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+	.story h1 {
+  text-align: center;
+}
+     
+
+    /* Top section: illustrated panel */
+    .panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.5));
+      border-radius: 14px;
+      padding: 16px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    /* The "illustration" is an inline SVG. The oval area is the photo placeholder. */
+    .illustration {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      overflow: visible;
+    }
+
+    .photo-placeholder {
+      width: 300px; /* Diubah lebih lebar untuk kotak */
+      height: 200px; /* Diubah lebih pendek untuk kotak */
+      border-radius: 10px; /* Diubah dari 50% ke 10px untuk sudut kotak lembut */
+      overflow: hidden;
+      display: block;
+      box-shadow: 0 8px 18px rgba(74,60,49,0.12);
+      border: 6px solid rgba(76,60,48,0.06);
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .photo-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .controls {
+      width: 100%;
+      display:flex;
+      gap:8px;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .controls input[type=file] {
+      display: none;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #e9d9cc;
+      border: 1px solid rgba(74,60,49,0.06);
+      cursor: pointer;
+      font-weight:600;
+    }
+
+    .hint {
+      font-size: 13px;
+      opacity: 0.85;
+      text-align:center;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .wrap { padding:20px; }
+      .panel { max-width: 100%; }
+      .photo-placeholder { width: 100%; height: 200px; } /* Lebih responsif di mobile */
+    }
+	
+	 nav {
+      background: #4a3c31;
+      padding: 14px;
+      text-align: center;
+	  
+
+    nav a {
+      color: #f3ece6;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+	
+	  
+	input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 2px solid #a48f7b;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #ffffff;
+      color: #4a3c31; 
+	
+	 footer {
+      background: #4a3c31;
+      color: #f3ece6;
+      text-align: center;
+      padding: 18px;
+      margin-top: 60px;
+      border-top: 3px solid rgba(255,255,255,0.2);
+    }
+	 
+    
+  </style>
+</head>
+<body>
+<nav>
+  
+    <a href="blog.html">blog</a>
+    
+  </nav>
+  <main class="wrap">
+    <aside class="panel">
+
+         
+
+          <!-- photo placeholder (rectangular) located on right side -->
+          <g transform="translate(280,70)">
+            <rect x="0" y="0" width="160" height="120" rx="10" fill="#ffffff" opacity="0.9"/> <!-- Diubah ke rectangular dengan rx kecil -->
+            <!-- dashed border to indicate editable area -->
+            <rect x="6" y="6" width="148" height="108" rx="8" fill="none" stroke="#4a3c31" stroke-width="2" stroke-dasharray="6 6"/> <!-- Diubah ke rect -->
+            <!-- small label -->
+            
+
+        </g>
+      </svg>
+
+      <!-- Photo placeholder (for real uploaded image) -->
+      <div class="photo-placeholder" id="photoWrap" style="margin-top:10px;">
+        <!-- empty by default; JS will inject uploaded image -->
+        <img src="lanscape.jpg" alt="Musik">
+      </div>
+
+      
+     
+    </aside>
+
+    <section class="story">
+      <h1>Ruang Favorit</h1>
+      <p>Ruangan ini selalu menjadi tempat penuh kenangan. Bukan karena bangunannya yang kokoh atau materialnya yang mahal, tetapi karena kita yang pernah mengisinya dan kita yang membuat kenangan itu ada.</p>
+
+      <p>Setelah lama tak berjumpa rasanya ada sesuatu yang hilang, sesuatu yang sulit dijelaskan. Setiap hari aku bertanya dalam hati, di mana kalian? Di mana kita? Dan… di mana ruangan itu? Ruangan tempat kita belajar, bercanda, dan menuliskan cerita yang sampai sekarang masih terasa hidup. Rasanya aku kehilangan tempat favorit itu lagi.</p>
+      <p>Kadang aku berharap kita bisa mengulang semuanya. Belajar bersama, bercerita tanpa henti, bahkan saat kita harus berada di ruangan itu selama 8 jam, tetap saja terasa cepat. Ada rindu pada suasananya, pada tawa kalian, pada kebiasaan-kebiasaan kecil yang dulu terasa biasa saja, tapi kini sangat berarti.</p>
+
+      <p>Setiap masa ada orangnya, dan setiap orang ada masanya. Mungkin kalimat itu memang menggambarkan bagaimana kita hadir di waktu yang sama, lalu perlahan berjalan ke arah masing-masing. Tapi untuk kita semua, selamat berjuang di kehidupan masing-masing. Semoga suatu hari nanti, kita bisa singgah lagi di ruangan favorit itu walau hanya sebentar dan merasakan hangatnya kenangan yang pernah kita bagi.</p>
+     
+      <a href="https://www.instagram.com/reel/DGPDWl4B26q/?igsh=MTVkMzNhZDVkOXV1Mg=="><h4>memories</h4></a>
+	  <a href="https://www.instagram.com/reel/DLAPjGfzAID/?igsh=MW52cmhrN3BsN3VyOA=="><h4>memories</h4></a>
+    </section>
+  </main>
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const photoWrap = document.getElementById('photoWrap');
+    const resetBtn = document.getElementById('resetBtn');
+
+    fileInput.addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const url = URL.createObjectURL(file);
+      photoWrap.innerHTML = '';
+      const img = document.createElement('img');
+      img.src = url;
+      img.alt = 'Foto pengguna';
+      photoWrap.appendChild(img);
+    });
+
+    resetBtn.addEventListener('click', () => {
+      photoWrap.innerHTML = '<span class="hint">Belum ada foto</span>';
+      fileInput.value = '';
+    });
+	
+  </script>
+  
+ 
+  
+</body>
+</html>
